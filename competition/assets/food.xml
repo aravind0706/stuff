@@ -1,0 +1,1094 @@
+<mujoco model="ant_food">
+  <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+
+  <option integrator="RK4" iterations="1000" timestep="0.01" />
+  <default>
+    <joint armature="1" damping="1" limited="true" />
+  <default class="agent0"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent1"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent2"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent3"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent4"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent5"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent6"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent7"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent8"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent9"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent10"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent11"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent12"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent13"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent14"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent15"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent16"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent17"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent18"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent19"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent20"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent21"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent22"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent23"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent24"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent25"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent26"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent27"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent28"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.25 0.5 0.5 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+</default><default class="agent29"><joint armature="1" damping="1" limited="true" />
+    <geom conaffinity="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.75 0.25 0.25 1" />
+    <motor ctrllimited="true" ctrlrange="-.4 .4" />
+
+</default></default>
+  <asset>
+    <texture builtin="gradient" height="100" rgb1="1 1 1" rgb2="0 0 0" type="skybox" width="100" />
+    <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127" />
+    <texture builtin="checker" height="100" name="texplane" rgb1=".1 .1 .1" rgb2=".3 .3 0.3" type="2d" width="100" />
+    <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane" />
+    <material name="geom" texture="texgeom" texuniform="true" />
+  </asset>
+  <worldbody>
+    <light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1" />
+    <geom conaffinity="1" condim="3" contype="1" friction="1 .1 .1" material="MatPlane" name="floor" pos="0 0 0" rgba="0.8 0.9 0.8 1" size="40 40 0.125" type="plane" />
+    <!--geom fromto="4 -5 0  4 +5 0" name="rightgoal" rgba="0.6 0.0 0.0 1" size=".03" type="cylinder" />
+    <geom fromto="-4 -5 0  -4 +5 0" name="leftgoal" rgba="0.6 0.0 0.0 1" size=".03" type="cylinder" /-->
+  <body euler="0 0 0" name="agent0/torso" pos="-10 -5  0.50">
+  <!--body euler="0 0 0" name="agent0/torso" pos="-1 0.0 0.50"-->
+  <geom class="agent0" name="agent0/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent0/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent0/front_left_leg" pos="0 0 0">
+    <geom class="agent0" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent0/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent0/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent0/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent0" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent0/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent0/anon6536603066" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent0/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent0" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent0/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent0/front_right_leg" pos="0 0 0">
+    <geom class="agent0" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent0/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent0/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent0/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent0" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent0/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent0/anon3383659265" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent0/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent0" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent0/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent0/back_leg" pos="0 0 0">
+    <geom class="agent0" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent0/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent0/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent0/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent0" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent0/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent0/anon9552781859" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent0/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent0" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent0/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent0/right_back_leg" pos="0 0 0">
+    <geom class="agent0" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent0/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent0/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent0/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent0" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent0/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent0/anon8050739523" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent0/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent0" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent0/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<!--body euler="0 0 180" name="agent1/torso" pos="1 0.0 0.50"-->
+<body euler="0 0 180" name="agent1/torso" pos="10 10 0.50">
+  <geom class="agent1" name="agent1/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent1/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent1/front_left_leg" pos="0 0 0">
+    <geom class="agent1" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent1/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent1/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent1/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent1" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent1/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent1/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent1/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent1" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent1/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent1/front_right_leg" pos="0 0 0">
+    <geom class="agent1" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent1/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent1/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent1/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent1" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent1/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent1/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent1/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent1" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent1/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent1/back_leg" pos="0 0 0">
+    <geom class="agent1" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent1/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent1/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent1/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent1" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent1/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent1/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent1/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent1" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent1/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent1/right_back_leg" pos="0 0 0">
+    <geom class="agent1" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent1/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent1/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent1/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent1" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent1/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent1/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent1/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent1" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent1/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent2/torso" pos="10 -5 0.50">
+  <geom class="agent2" name="agent2/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent2/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent2/front_left_leg" pos="0 0 0">
+    <geom class="agent2" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent2/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent2/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent2/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent2" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent2/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent2/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent2/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent2" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent2/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent2/front_right_leg" pos="0 0 0">
+    <geom class="agent2" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent2/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent2/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent2/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent2" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent2/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent2/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent2/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent2" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent2/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent2/back_leg" pos="0 0 0">
+    <geom class="agent2" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent2/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent2/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent2/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent2" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent2/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent2/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent2/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent2" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent2/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent2/right_back_leg" pos="0 0 0">
+    <geom class="agent2" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent2/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent2/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent2/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent2" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent2/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent2/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent2/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent2" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent2/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent3/torso" pos="-10 10 0.50">
+  <geom class="agent3" name="agent3/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent3/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent3/front_left_leg" pos="0 0 0">
+    <geom class="agent3" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent3/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent3/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent3/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent3" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent3/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent3/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent3/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent3" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent3/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent3/front_right_leg" pos="0 0 0">
+    <geom class="agent3" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent3/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent3/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent3/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent3" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent3/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent3/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent3/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent3" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent3/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent3/back_leg" pos="0 0 0">
+    <geom class="agent3" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent3/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent3/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent3/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent3" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent3/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent3/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent3/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent3" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent3/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent3/right_back_leg" pos="0 0 0">
+    <geom class="agent3" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent3/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent3/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent3/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent3" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent3/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent3/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent3/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent3" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent3/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent4/torso" pos="-10 0 0.50">
+  <geom class="agent4" name="agent4/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent4/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent4/front_left_leg" pos="0 0 0">
+    <geom class="agent4" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent4/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent4/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent4/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent4" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent4/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent4/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent4/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent4" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent4/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent4/front_right_leg" pos="0 0 0">
+    <geom class="agent4" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent4/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent4/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent4/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent4" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent4/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent4/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent4/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent4" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent4/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent4/back_leg" pos="0 0 0">
+    <geom class="agent4" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent4/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent4/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent4/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent4" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent4/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent4/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent4/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent4" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent4/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent4/right_back_leg" pos="0 0 0">
+    <geom class="agent4" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent4/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent4/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent4/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent4" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent4/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent4/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent4/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent4" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent4/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent5/torso" pos="10 0 0.50">
+  <geom class="agent5" name="agent5/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent5/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent5/front_left_leg" pos="0 0 0">
+    <geom class="agent5" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent5/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent5/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent5/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent5" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent5/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent5/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent5/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent5" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent5/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent5/front_right_leg" pos="0 0 0">
+    <geom class="agent5" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent5/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent5/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent5/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent5" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent5/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent5/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent5/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent5" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent5/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent5/back_leg" pos="0 0 0">
+    <geom class="agent5" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent5/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent5/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent5/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent5" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent5/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent5/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent5/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent5" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent5/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent5/right_back_leg" pos="0 0 0">
+    <geom class="agent5" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent5/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent5/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent5/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent5" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent5/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent5/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent5/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent5" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent5/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent6/torso" pos="3 -3 0.50">
+  <geom class="agent6" name="agent6/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent6/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent6/front_left_leg" pos="0 0 0">
+    <geom class="agent6" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent6/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent6/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent6/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent6" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent6/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent6/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent6/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent6" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent6/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent6/front_right_leg" pos="0 0 0">
+    <geom class="agent6" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent6/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent6/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent6/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent6" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent6/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent6/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent6/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent6" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent6/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent6/back_leg" pos="0 0 0">
+    <geom class="agent6" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent6/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent6/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent6/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent6" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent6/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent6/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent6/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent6" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent6/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent6/right_back_leg" pos="0 0 0">
+    <geom class="agent6" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent6/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent6/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent6/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent6" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent6/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent6/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent6/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent6" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent6/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent7/torso" pos="-5 -3 0.50">
+  <geom class="agent7" name="agent7/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent7/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent7/front_left_leg" pos="0 0 0">
+    <geom class="agent7" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent7/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent7/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent7/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent7" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent7/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent7/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent7/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent7" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent7/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent7/front_right_leg" pos="0 0 0">
+    <geom class="agent7" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent7/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent7/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent7/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent7" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent7/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent7/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent7/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent7" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent7/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent7/back_leg" pos="0 0 0">
+    <geom class="agent7" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent7/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent7/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent7/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent7" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent7/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent7/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent7/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent7" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent7/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent7/right_back_leg" pos="0 0 0">
+    <geom class="agent7" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent7/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent7/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent7/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent7" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent7/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent7/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent7/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent7" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent7/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent8/torso" pos="0 0 0.50">
+  <geom class="agent8" name="agent8/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent8/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent8/front_left_leg" pos="0 0 0">
+    <geom class="agent8" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent8/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent8/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent8/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent8" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent8/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent8/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent8/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent8" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent8/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent8/front_right_leg" pos="0 0 0">
+    <geom class="agent8" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent8/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent8/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent8/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent8" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent8/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent8/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent8/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent8" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent8/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent8/back_leg" pos="0 0 0">
+    <geom class="agent8" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent8/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent8/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent8/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent8" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent8/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent8/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent8/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent8" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent8/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent8/right_back_leg" pos="0 0 0">
+    <geom class="agent8" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent8/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent8/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent8/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent8" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent8/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent8/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent8/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent8" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent8/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent9/torso" pos="6 6 0.50">
+  <geom class="agent9" name="agent9/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent9/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent9/front_left_leg" pos="0 0 0">
+    <geom class="agent9" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent9/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent9/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent9/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent9" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent9/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent9/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent9/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent9" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent9/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent9/front_right_leg" pos="0 0 0">
+    <geom class="agent9" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent9/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent9/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent9/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent9" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent9/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent9/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent9/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent9" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent9/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent9/back_leg" pos="0 0 0">
+    <geom class="agent9" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent9/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent9/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent9/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent9" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent9/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent9/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent9/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent9" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent9/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent9/right_back_leg" pos="0 0 0">
+    <geom class="agent9" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent9/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent9/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent9/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent9" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent9/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent9/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent9/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent9" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent9/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent10/torso" pos="0 -4 0.50">
+  <geom class="agent10" name="agent10/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent10/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent10/front_left_leg" pos="0 0 0">
+    <geom class="agent10" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent10/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent10/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent10/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent10" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent10/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent10/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent10/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent10" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent10/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent10/front_right_leg" pos="0 0 0">
+    <geom class="agent10" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent10/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent10/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent10/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent10" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent10/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent10/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent10/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent10" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent10/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent10/back_leg" pos="0 0 0">
+    <geom class="agent10" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent10/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent10/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent10/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent10" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent10/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent10/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent10/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent10" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent10/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent10/right_back_leg" pos="0 0 0">
+    <geom class="agent10" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent10/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent10/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent10/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent10" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent10/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent10/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent10/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent10" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent10/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent11/torso" pos="0 10 0.50">
+  <geom class="agent11" name="agent11/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent11/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent11/front_left_leg" pos="0 0 0">
+    <geom class="agent11" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent11/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent11/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent11/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent11" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent11/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent11/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent11/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent11" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent11/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent11/front_right_leg" pos="0 0 0">
+    <geom class="agent11" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent11/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent11/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent11/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent11" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent11/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent11/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent11/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent11" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent11/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent11/back_leg" pos="0 0 0">
+    <geom class="agent11" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent11/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent11/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent11/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent11" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent11/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent11/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent11/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent11" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent11/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent11/right_back_leg" pos="0 0 0">
+    <geom class="agent11" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent11/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent11/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent11/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent11" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent11/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent11/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent11/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent11" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent11/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent12/torso" pos="-4 10 0.50">
+  <geom class="agent12" name="agent12/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent12/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent12/front_left_leg" pos="0 0 0">
+    <geom class="agent12" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent12/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent12/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent12/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent12" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent12/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent12/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent12/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent12" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent12/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent12/front_right_leg" pos="0 0 0">
+    <geom class="agent12" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent12/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent12/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent12/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent12" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent12/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent12/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent12/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent12" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent12/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent12/back_leg" pos="0 0 0">
+    <geom class="agent12" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent12/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent12/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent12/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent12" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent12/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent12/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent12/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent12" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent12/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent12/right_back_leg" pos="0 0 0">
+    <geom class="agent12" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent12/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent12/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent12/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent12" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent12/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent12/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent12/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent12" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent12/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent13/torso" pos="4 10 0.50">
+  <geom class="agent13" name="agent13/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent13/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent13/front_left_leg" pos="0 0 0">
+    <geom class="agent13" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent13/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent13/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent13/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent13" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent13/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent13/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent13/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent13" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent13/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent13/front_right_leg" pos="0 0 0">
+    <geom class="agent13" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent13/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent13/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent13/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent13" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent13/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent13/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent13/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent13" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent13/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent13/back_leg" pos="0 0 0">
+    <geom class="agent13" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent13/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent13/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent13/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent13" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent13/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent13/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent13/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent13" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent13/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent13/right_back_leg" pos="0 0 0">
+    <geom class="agent13" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent13/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent13/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent13/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent13" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent13/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent13/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent13/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent13" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent13/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent14/torso" pos="4 -6 0.50">
+  <geom class="agent14" name="agent14/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent14/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent14/front_left_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent14/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent14/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent14/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent14/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/front_right_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent14/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent14/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent14/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent14/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/back_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent14/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent14/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent14/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent14/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/right_back_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent14/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent14/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent14/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent14/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+<body euler="0 0 180" name="agent15/torso" pos="-4 6 0.50">
+  <geom class="agent15" name="agent15/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent15/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent15/front_left_leg" pos="0 0 0">
+    <geom class="agent15" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent15/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent15/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent15/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent15" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent15/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent15/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent15/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent15" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent15/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent15/front_right_leg" pos="0 0 0">
+    <geom class="agent15" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent15/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent15/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent15/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent15" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent15/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent15/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent15/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent15" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent15/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent15/back_leg" pos="0 0 0">
+    <geom class="agent15" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent15/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent15/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent15/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent15" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent15/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent15/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent15/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent15" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent15/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent15/right_back_leg" pos="0 0 0">
+    <geom class="agent15" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent15/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent15/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent15/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent15" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent15/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent15/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent15/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent15" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent15/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+<body euler="0 0 180" name="agent16/torso" pos="-6 4 0.50">
+  <geom class="agent16" name="agent16/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent16/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent16/front_left_leg" pos="0 0 0">
+    <geom class="agent16" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent16/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent16/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent16/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent16" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent16/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent16/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent16/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent16" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent16/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent16/front_right_leg" pos="0 0 0">
+    <geom class="agent16" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent16/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent16/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent16/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent16" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent16/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent16/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent16/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent16" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent16/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent16/back_leg" pos="0 0 0">
+    <geom class="agent16" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent16/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent16/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent16/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent16" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent16/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent16/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent16/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent16" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent16/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent16/right_back_leg" pos="0 0 0">
+    <geom class="agent16" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent16/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent16/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent16/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent16" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent16/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent16/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent16/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent16" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent16/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+</worldbody>
+<actuator>
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/hip_4" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/ankle_4" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/hip_1" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/ankle_1" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/hip_2" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/ankle_2" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/hip_3" />
+  <motor class="agent0" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent0/ankle_3" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/hip_4" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/ankle_4" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/hip_1" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/ankle_1" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/hip_2" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/ankle_2" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/hip_3" />
+  <motor class="agent1" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent1/ankle_3" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/hip_4" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/ankle_4" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/hip_1" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/ankle_1" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/hip_2" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/ankle_2" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/hip_3" />
+  <motor class="agent2" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent2/ankle_3" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/hip_4" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/ankle_4" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/hip_1" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/ankle_1" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/hip_2" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/ankle_2" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/hip_3" />
+  <motor class="agent3" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent3/ankle_3" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/hip_4" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/ankle_4" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/hip_1" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/ankle_1" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/hip_2" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/ankle_2" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/hip_3" />
+  <motor class="agent4" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent4/ankle_3" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/hip_4" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/ankle_4" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/hip_1" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/ankle_1" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/hip_2" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/ankle_2" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/hip_3" />
+  <motor class="agent5" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent5/ankle_3" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/hip_4" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/ankle_4" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/hip_1" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/ankle_1" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/hip_2" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/ankle_2" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/hip_3" />
+  <motor class="agent6" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent6/ankle_3" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/hip_4" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/ankle_4" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/hip_1" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/ankle_1" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/hip_2" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/ankle_2" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/hip_3" />
+  <motor class="agent7" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent7/ankle_3" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/hip_4" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/ankle_4" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/hip_1" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/ankle_1" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/hip_2" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/ankle_2" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/hip_3" />
+  <motor class="agent8" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent8/ankle_3" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/hip_4" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/ankle_4" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/hip_1" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/ankle_1" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/hip_2" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/ankle_2" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/hip_3" />
+  <motor class="agent9" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent9/ankle_3" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/hip_4" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/ankle_4" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/hip_1" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/ankle_1" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/hip_2" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/ankle_2" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/hip_3" />
+  <motor class="agent10" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent10/ankle_3" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/hip_4" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/ankle_4" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/hip_1" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/ankle_1" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/hip_2" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/ankle_2" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/hip_3" />
+  <motor class="agent11" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent11/ankle_3" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/hip_4" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/ankle_4" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/hip_1" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/ankle_1" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/hip_2" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/ankle_2" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/hip_3" />
+  <motor class="agent12" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent12/ankle_3" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_4" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_4" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_1" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_1" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_2" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_2" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_3" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_3" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_4" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_4" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_1" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_1" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_2" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_2" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_3" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_3" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/hip_4" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/ankle_4" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/hip_1" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/ankle_1" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/hip_2" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/ankle_2" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/hip_3" />
+  <motor class="agent15" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent15/ankle_3" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/hip_4" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/ankle_4" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/hip_1" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/ankle_1" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/hip_2" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/ankle_2" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/hip_3" />
+  <motor class="agent16" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent16/ankle_3" />
+</actuator>
+
+</mujoco>

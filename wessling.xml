@@ -1,0 +1,266 @@
+<!-- DO NOT CHANGE THIS XML FILE DIRECTLY SINCE IT IS GENERATED! INSTEAD, CHANGE gen_wessling_xml.py -->
+<mujoco>
+    <compiler angle="radian" eulerseq="xyz" coordinate="local" meshdir="../../../cache/s3/stls"/>
+    <size   njmax="500"
+            nconmax="100"
+            nuser_jnt="1"
+            nuser_site="1"
+            nuser_tendon="1"
+            nuser_sensor="1"
+            nuser_actuator="16"
+            nstack="600000"/>
+
+    <option timestep="0.002" iterations="20"/>
+    <visual>
+        <map fogstart="3" fogend="5" force="0.1"/>
+        <quality shadowsize="4096"/>
+    </visual>
+    <asset>
+        <mesh file="robot/wessling/finger_base_solid.stl" name="finger_base_solid"></mesh>
+        <mesh file="robot/wessling/finger_solid_pp_001.stl" name="finger_solid_pp_001"></mesh>
+        <mesh file="robot/wessling/palm_solid_001_a.stl" name="palm_solid_001_a"></mesh>
+        <mesh file="robot/wessling/palm_solid_001_b.stl" name="palm_solid_001_b"></mesh>
+        <mesh file="robot/wessling/palm_solid_001_c.stl" name="palm_solid_001_c"></mesh>
+        <mesh file="robot/wessling/palm_solid_001_d.stl" name="palm_solid_001_d"></mesh>
+        <mesh file="robot/wessling/solid_finger_pm.stl" name="solid_finger_pm"></mesh>
+        <mesh file="robot/wessling/solid_finger_tip.stl" name="solid_finger_tip"></mesh>
+    </asset>
+    <contact>
+
+        <exclude body1="palm" body2="FFB2"/>
+        <exclude body1="FFB2" body2="FFB1"/>
+        <exclude body1="FFB1" body2="FFB0"/>
+
+        <exclude body1="palm" body2="MFB2"/>
+        <exclude body1="MFB2" body2="MFB1"/>
+        <exclude body1="MFB1" body2="MFB0"/>
+
+        <exclude body1="palm" body2="RFB2"/>
+        <exclude body1="RFB2" body2="RFB1"/>
+        <exclude body1="RFB1" body2="RFB0"/>
+
+        <exclude body1="palm" body2="LFB2"/>
+        <exclude body1="LFB2" body2="LFB1"/>
+        <exclude body1="LFB1" body2="LFB0"/>
+
+        <exclude body1="palm" body2="THB2"/>
+        <exclude body1="THB2" body2="THB1"/>
+        <exclude body1="THB1" body2="THB0"/>
+
+    </contact>
+
+    <tendon>
+
+        <fixed name="FFT0" range="0 1.6" limited="true">
+            <joint joint="FFJ1" coef="1." />
+            <joint joint="FFJ0" coef="-1."/>
+        </fixed>
+        <fixed name="FFT1" range="0 3.14" limited="true" damping="0.1">
+            <joint joint="FFJ1" coef="1.0"/>
+            <joint joint="FFJ0" coef="1.0"/>
+        </fixed>
+
+        <fixed name="MFT0" range="0 1.6" limited="true">
+            <joint joint="MFJ1" coef="1." />
+            <joint joint="MFJ0" coef="-1."/>
+        </fixed>
+        <fixed name="MFT1" range="0 3.14" limited="true" damping="0.1">
+            <joint joint="MFJ1" coef="1.0"/>
+            <joint joint="MFJ0" coef="1.0"/>
+        </fixed>
+
+        <fixed name="RFT0" range="0 1.6" limited="true">
+            <joint joint="RFJ1" coef="1." />
+            <joint joint="RFJ0" coef="-1."/>
+        </fixed>
+        <fixed name="RFT1" range="0 3.14" limited="true" damping="0.1">
+            <joint joint="RFJ1" coef="1.0"/>
+            <joint joint="RFJ0" coef="1.0"/>
+        </fixed>
+
+        <fixed name="LFT0" range="0 1.6" limited="true">
+            <joint joint="LFJ1" coef="1." />
+            <joint joint="LFJ0" coef="-1."/>
+        </fixed>
+        <fixed name="LFT1" range="0 3.14" limited="true" damping="0.1">
+            <joint joint="LFJ1" coef="1.0"/>
+            <joint joint="LFJ0" coef="1.0"/>
+        </fixed>
+
+        <fixed name="THT0" range="0 1.6" limited="true">
+            <joint joint="THJ1" coef="1." />
+            <joint joint="THJ0" coef="-1."/>
+        </fixed>
+        <fixed name="THT1" range="0 3.14" limited="true" damping="0.1">
+            <joint joint="THJ1" coef="1.0"/>
+            <joint joint="THJ0" coef="1.0"/>
+        </fixed>
+
+    </tendon>
+    <worldbody>
+        <site name="phasespace_ref0" pos="0.007 -0.009 -0.006" type="sphere" rgba="1 0 0 1" size="0.003"/>
+        <site name="phasespace_ref1" pos="0.085 -0.009 -0.006" type="sphere" rgba="1 0 0 1" size="0.003"/>
+        <site name="phasespace_ref2" pos="0.085 -0.009 -0.084" type="sphere" rgba="1 0 0 1" size="0.003"/>
+
+        <!--
+        The kinematic tree may seem unnecessary complicated. However, we have to conform
+        to the coordinate system provided by Wessling (https://drive.google.com/open?id=1hAOTuLmRPkhbt3-Ym6I7wVkNDxTnCYSe)
+        since many properties (e.g. center of mass and inertia tensors) are provided w.r.t. to those.
+        Please be careful when updating this file, since it is very easy to mess things up even though
+        they may look visually correct. In all cases, you should verify that the center of mass
+        for all bodies look reasonable and that the coordinate systems match what is specified in
+        the above PDF file.
+        -->
+        <body name="hand mount" pos="0.074904 0.225497 0.035339">
+            <body name="palm" pos="0 0 0" quat="1 1 -1 1">
+                <!--
+                The CAD model uses a different coordinate system than the kinematic specification.
+                We therefore have to apply a transformation, which is detailed in this PDF here:
+                https://drive.google.com/open?id=1JO58NWyABjfdUumOuc-qt5859Mt5ouMA
+                -->
+                <geom mesh="palm_solid_001_a" type="mesh" pos="0.0175 0.0075 0.0225" quat="1 1 1 1" />
+                <geom mesh="palm_solid_001_b" type="mesh" pos="0.0175 0.0075 0.0225" quat="1 1 1 1" />
+                <geom mesh="palm_solid_001_c" type="mesh" pos="0.0175 0.0075 0.0225" quat="1 1 1 1" />
+                <geom mesh="palm_solid_001_d" type="mesh" pos="0.0175 0.0075 0.0225" quat="1 1 1 1" />
+
+                <body name="FFB2" pos="-0.002529881 0.036800135 0.108743545" quat="0.030843645823095123 0.7064337686664897 -0.030843645823095178 0.70643376866649">
+                    <joint axis="0 0 1" damping="0.1" pos="0 0 0" type="hinge" name="FFJ3" range="-0.2617993950843811 0.2617993950843811" limited="true"/>
+                    <joint axis="0 -1 0" damping="0.1" pos="0 0 0" type="hinge" name="FFJ2" range="0.0872664600610733 1.483529806137085" limited="true"/>
+                    <geom mesh="finger_solid_pp_001" type="mesh" condim="3" quat="1 -1 -1 -1" />
+                    <inertial mass="0.044370598" pos="0.03016451 -0.0010130813 0.00050813186" fullinertia="4.5592704e-06 4.9045259e-05 5.0524234e-05 9.0783105e-07 -9.399771e-07 1.7052714e-08" />
+                    <body name="FFB1" pos="0.055 0 0" quat="1 1 0 0">
+                        <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="FFJ1" range="0.0872664600610733 1.1344640254974365" limited="true"/>
+                        <geom mesh="solid_finger_pm" type="mesh" condim="3" pos="-0.055 0 0" quat="0 1 1 0" />
+                        <inertial mass="0.027110192" pos="0.0057271879 -0.0016164173 -0.0011567914" fullinertia="2.2900229e-06 4.2155489e-06 4.4292927e-06 4.0604622e-07 1.4362094e-07 -4.3115648e-08" />
+                        <body name="FFB0" pos="0.025 0 0" quat="1 0 0 -1">
+                            <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="FFJ0" range="0.0 1.5707963705062866" limited="true"/> <!-- This joint is not actuated.-->
+                            <geom mesh="solid_finger_tip" type="mesh" condim="3" pos="0 -0.08 0" quat="0 0 1 0" />
+                            <inertial mass="0.018179709" pos="-0.00083348211 0.0061007977 0.0017728256" fullinertia="2.5867271e-06 8.4596248e-07 2.5838485e-06 1.5840536e-07 -7.8205885e-10 -4.8358115e-09" />
+                            <site name="Tch_fftip" type="capsule" size="0.007 0.004" pos="-0.005 0.02 0.0" rgba="0 0.5 0 0.2"/>
+                            <site name="S_fftip" pos="0.01 0.02 0.0" size="0.003" rgba="1 0 0 1"/>/
+                        </body>
+                    </body>
+                </body>
+
+                <body name="MFB2" pos="-0.0037 0.01 0.119043545" quat="0.0 -0.7071067811865475 0.0 -0.7071067811865475">
+                    <joint axis="0 0 1" damping="0.1" pos="0 0 0" type="hinge" name="MFJ3" range="-0.2617993950843811 0.2617993950843811" limited="true"/>
+                    <joint axis="0 -1 0" damping="0.1" pos="0 0 0" type="hinge" name="MFJ2" range="0.0872664600610733 1.483529806137085" limited="true"/>
+                    <geom mesh="finger_solid_pp_001" type="mesh" condim="3" quat="1 -1 -1 -1" />
+                    <inertial mass="0.044370598" pos="0.03016451 -0.0010130813 0.00050813186" fullinertia="4.5592704e-06 4.9045259e-05 5.0524234e-05 9.0783105e-07 -9.399771e-07 1.7052714e-08" />
+                    <body name="MFB1" pos="0.055 0 0" quat="1 1 0 0">
+                        <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="MFJ1" range="0.0872664600610733 1.1344640254974365" limited="true"/>
+                        <geom mesh="solid_finger_pm" type="mesh" condim="3" pos="-0.055 0 0" quat="0 1 1 0" />
+                        <inertial mass="0.027110192" pos="0.0057271879 -0.0016164173 -0.0011567914" fullinertia="2.2900229e-06 4.2155489e-06 4.4292927e-06 4.0604622e-07 1.4362094e-07 -4.3115648e-08" />
+                        <body name="MFB0" pos="0.025 0 0" quat="1 0 0 -1">
+                            <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="MFJ0" range="0.0 1.5707963705062866" limited="true"/> <!-- This joint is not actuated.-->
+                            <geom mesh="solid_finger_tip" type="mesh" condim="3" pos="0 -0.08 0" quat="0 0 1 0" />
+                            <inertial mass="0.018179709" pos="-0.00083348211 0.0061007977 0.0017728256" fullinertia="2.5867271e-06 8.4596248e-07 2.5838485e-06 1.5840536e-07 -7.8205885e-10 -4.8358115e-09" />
+                            <site name="Tch_mftip" type="capsule" size="0.007 0.004" pos="-0.005 0.02 0.0" rgba="0 0.5 0 0.2"/>
+                            <site name="S_mftip" pos="0.01 0.02 0.0" size="0.003" rgba="1 0 0 1"/>/
+                        </body>
+                    </body>
+                </body>
+
+                <body name="RFB2" pos="-0.002529881 -0.016800135 0.114043545" quat="0.030843645823095123 -0.7064337686664897 -0.030843645823095178 -0.70643376866649">
+                    <joint axis="0 0 1" damping="0.1" pos="0 0 0" type="hinge" name="RFJ3" range="-0.2617993950843811 0.2617993950843811" limited="true"/>
+                    <joint axis="0 -1 0" damping="0.1" pos="0 0 0" type="hinge" name="RFJ2" range="0.0872664600610733 1.483529806137085" limited="true"/>
+                    <geom mesh="finger_solid_pp_001" type="mesh" condim="3" quat="1 -1 -1 -1" />
+                    <inertial mass="0.044370598" pos="0.03016451 -0.0010130813 0.00050813186" fullinertia="4.5592704e-06 4.9045259e-05 5.0524234e-05 9.0783105e-07 -9.399771e-07 1.7052714e-08" />
+                    <body name="RFB1" pos="0.055 0 0" quat="1 1 0 0">
+                        <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="RFJ1" range="0.0872664600610733 1.1344640254974365" limited="true"/>
+                        <geom mesh="solid_finger_pm" type="mesh" condim="3" pos="-0.055 0 0" quat="0 1 1 0" />
+                        <inertial mass="0.027110192" pos="0.0057271879 -0.0016164173 -0.0011567914" fullinertia="2.2900229e-06 4.2155489e-06 4.4292927e-06 4.0604622e-07 1.4362094e-07 -4.3115648e-08" />
+                        <body name="RFB0" pos="0.025 0 0" quat="1 0 0 -1">
+                            <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="RFJ0" range="0.0 1.5707963705062866" limited="true"/> <!-- This joint is not actuated.-->
+                            <geom mesh="solid_finger_tip" type="mesh" condim="3" pos="0 -0.08 0" quat="0 0 1 0" />
+                            <inertial mass="0.018179709" pos="-0.00083348211 0.0061007977 0.0017728256" fullinertia="2.5867271e-06 8.4596248e-07 2.5838485e-06 1.5840536e-07 -7.8205885e-10 -4.8358115e-09" />
+                            <site name="Tch_rftip" type="capsule" size="0.007 0.004" pos="-0.005 0.02 0.0" rgba="0 0.5 0 0.2"/>
+                            <site name="S_rftip" pos="0.01 0.02 0.0" size="0.003" rgba="1 0 0 1"/>/
+                        </body>
+                    </body>
+                </body>
+
+                <body name="LFB2" pos="0.000971571 -0.043396306 0.095043545" quat="0.061628339985342055 -0.7044160331158362 -0.06162833998534212 -0.7044160331158364">
+                    <joint axis="0 0 1" damping="0.1" pos="0 0 0" type="hinge" name="LFJ3" range="-0.2617993950843811 0.2617993950843811" limited="true"/>
+                    <joint axis="0 -1 0" damping="0.1" pos="0 0 0" type="hinge" name="LFJ2" range="0.0872664600610733 1.483529806137085" limited="true"/>
+                    <geom mesh="finger_solid_pp_001" type="mesh" condim="3" quat="1 -1 -1 -1" />
+                    <inertial mass="0.044370598" pos="0.03016451 -0.0010130813 0.00050813186" fullinertia="4.5592704e-06 4.9045259e-05 5.0524234e-05 9.0783105e-07 -9.399771e-07 1.7052714e-08" />
+                    <body name="LFB1" pos="0.055 0 0" quat="1 1 0 0">
+                        <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="LFJ1" range="0.0872664600610733 1.1344640254974365" limited="true"/>
+                        <geom mesh="solid_finger_pm" type="mesh" condim="3" pos="-0.055 0 0" quat="0 1 1 0" />
+                        <inertial mass="0.027110192" pos="0.0057271879 -0.0016164173 -0.0011567914" fullinertia="2.2900229e-06 4.2155489e-06 4.4292927e-06 4.0604622e-07 1.4362094e-07 -4.3115648e-08" />
+                        <body name="LFB0" pos="0.025 0 0" quat="1 0 0 -1">
+                            <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="LFJ0" range="0.0 1.5707963705062866" limited="true"/> <!-- This joint is not actuated.-->
+                            <geom mesh="solid_finger_tip" type="mesh" condim="3" pos="0 -0.08 0" quat="0 0 1 0" />
+                            <inertial mass="0.018179709" pos="-0.00083348211 0.0061007977 0.0017728256" fullinertia="2.5867271e-06 8.4596248e-07 2.5838485e-06 1.5840536e-07 -7.8205885e-10 -4.8358115e-09" />
+                            <site name="Tch_lftip" type="capsule" size="0.007 0.004" pos="-0.005 0.02 0.0" rgba="0 0.5 0 0.2"/>
+                            <site name="S_lftip" pos="0.01 0.02 0.0" size="0.003" rgba="1 0 0 1"/>/
+                        </body>
+                    </body>
+                </body>
+
+                <body name="THB2" pos="0.062569057 0.044544548 0.080044647" quat="0.8215030181789524 0.1991438101242065 -0.48190537617200524 0.2307417223403762">
+                    <joint axis="0 0 1" damping="0.1" pos="0 0 0" type="hinge" name="THJ3" range="-0.2617993950843811 0.2617993950843811" limited="true"/>
+                    <joint axis="0 -1 0" damping="0.1" pos="0 0 0" type="hinge" name="THJ2" range="0.0872664600610733 1.483529806137085" limited="true"/>
+                    <geom mesh="finger_solid_pp_001" type="mesh" condim="3" quat="1 -1 -1 -1" />
+                    <inertial mass="0.044370598" pos="0.03016451 -0.0010130813 0.00050813186" fullinertia="4.5592704e-06 4.9045259e-05 5.0524234e-05 9.0783105e-07 -9.399771e-07 1.7052714e-08" />
+                    <body name="THB1" pos="0.055 0 0" quat="1 1 0 0">
+                        <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="THJ1" range="0.0872664600610733 1.1344640254974365" limited="true"/>
+                        <geom mesh="solid_finger_pm" type="mesh" condim="3" pos="-0.055 0 0" quat="0 1 1 0" />
+                        <inertial mass="0.027110192" pos="0.0057271879 -0.0016164173 -0.0011567914" fullinertia="2.2900229e-06 4.2155489e-06 4.4292927e-06 4.0604622e-07 1.4362094e-07 -4.3115648e-08" />
+                        <body name="THB0" pos="0.025 0 0" quat="1 0 0 -1">
+                            <joint axis="0 0 1" damping="0.25" pos="0 0 0" type="hinge" name="THJ0" range="0.0 1.5707963705062866" limited="true"/> <!-- This joint is not actuated.-->
+                            <geom mesh="solid_finger_tip" type="mesh" condim="3" pos="0 -0.08 0" quat="0 0 1 0" />
+                            <inertial mass="0.018179709" pos="-0.00083348211 0.0061007977 0.0017728256" fullinertia="2.5867271e-06 8.4596248e-07 2.5838485e-06 1.5840536e-07 -7.8205885e-10 -4.8358115e-09" />
+                            <site name="Tch_thtip" type="capsule" size="0.007 0.004" pos="-0.005 0.02 0.0" rgba="0 0.5 0 0.2"/>
+                            <site name="S_thtip" pos="0.01 0.02 0.0" size="0.003" rgba="1 0 0 1"/>/
+                        </body>
+                    </body>
+                </body>
+
+            </body>
+        </body>
+        <body name="annotation:outer_bound" pos="0.068555 0.112887 0.076029">
+            <geom conaffinity="0" contype="0" mass="0" pos="0 0 0" rgba="0.417022 0.720324 0.000114 0.1" size="0.068554 0.112886 0.076029" type="box"></geom>
+        </body>
+    </worldbody>
+
+    <sensor>
+
+        <touch name="ST_Tch_fftip"  site="Tch_fftip"/>
+
+        <touch name="ST_Tch_mftip"  site="Tch_mftip"/>
+
+        <touch name="ST_Tch_rftip"  site="Tch_rftip"/>
+
+        <touch name="ST_Tch_lftip"  site="Tch_lftip"/>
+
+        <touch name="ST_Tch_thtip"  site="Tch_thtip"/>
+
+    </sensor>
+
+    <actuator>
+
+        <position name="A_FFJ3" joint="FFJ3" kp="1" ctrlrange="-0.2617993950843811 0.2617993950843811" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_FFJ2" joint="FFJ2" kp="1" ctrlrange="0.0872664600610733 1.483529806137085" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_FFJ1" tendon="FFT1" kp="1" ctrlrange="0.0872664600610733 1.1344640254974365" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true" />
+
+        <position name="A_MFJ3" joint="MFJ3" kp="1" ctrlrange="-0.2617993950843811 0.2617993950843811" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_MFJ2" joint="MFJ2" kp="1" ctrlrange="0.0872664600610733 1.483529806137085" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_MFJ1" tendon="MFT1" kp="1" ctrlrange="0.0872664600610733 1.1344640254974365" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true" />
+
+        <position name="A_RFJ3" joint="RFJ3" kp="1" ctrlrange="-0.2617993950843811 0.2617993950843811" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_RFJ2" joint="RFJ2" kp="1" ctrlrange="0.0872664600610733 1.483529806137085" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_RFJ1" tendon="RFT1" kp="1" ctrlrange="0.0872664600610733 1.1344640254974365" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true" />
+
+        <position name="A_LFJ3" joint="LFJ3" kp="1" ctrlrange="-0.2617993950843811 0.2617993950843811" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_LFJ2" joint="LFJ2" kp="1" ctrlrange="0.0872664600610733 1.483529806137085" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_LFJ1" tendon="LFT1" kp="1" ctrlrange="0.0872664600610733 1.1344640254974365" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true" />
+
+        <position name="A_THJ3" joint="THJ3" kp="1" ctrlrange="-0.2617993950843811 0.2617993950843811" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_THJ2" joint="THJ2" kp="1" ctrlrange="0.0872664600610733 1.483529806137085" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true"/>
+        <position name="A_THJ1" tendon="THT1" kp="1" ctrlrange="0.0872664600610733 1.1344640254974365" forcerange="-1.0 1.0" ctrllimited="true" forcelimited="true" />
+
+    </actuator>
+</mujoco>
+

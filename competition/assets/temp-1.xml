@@ -1,0 +1,9 @@
+
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_4" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_4" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_1" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_1" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_2" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_2" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/hip_3" />
+  <motor class="agent13" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent13/ankle_3" />

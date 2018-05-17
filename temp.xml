@@ -1,0 +1,59 @@
+
+<body euler="0 0 180" name="agent14/torso" pos="0 10 0.50">
+  <geom class="agent14" name="agent14/torso_geom" pos="0 0 0" size="0.25" type="sphere" />
+  <joint armature="0" damping="0" limited="false" margin="0.01" name="agent14/root" pos="0 0 0" range="-30 30" type="free" />
+  <body name="agent14/front_left_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent14/aux_1_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_1" pos="0.2 0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="agent14/left_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon7505497015" pos="0.2 0.2 0">
+        <joint axis="-1 1 0" name="agent14/ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="agent14/left_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/front_right_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent14/aux_2_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_2" pos="-0.2 0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="agent14/right_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon1577089404" pos="-0.2 0.2 0">
+        <joint axis="1 1 0" name="agent14/ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="agent14/right_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/back_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent14/aux_3_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_3" pos="-0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="agent14/back_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon7877050929" pos="-0.2 -0.2 0">
+        <joint axis="-1 1 0" name="agent14/ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="agent14/third_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+  <body name="agent14/right_back_leg" pos="0 0 0">
+    <geom class="agent14" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent14/aux_4_geom" size="0.08" type="capsule" />
+    <body name="agent14/aux_4" pos="0.2 -0.2 0">
+      <joint axis="0 0 1" name="agent14/hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge" />
+      <geom class="agent14" fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="agent14/rightback_leg_geom" size="0.08" type="capsule" />
+      <body name="agent14/anon5005862100" pos="0.2 -0.2 0">
+        <joint axis="1 1 0" name="agent14/ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge" />
+        <geom class="agent14" fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="agent14/fourth_ankle_geom" size="0.08" type="capsule" />
+      </body>
+    </body>
+  </body>
+</body>
+
+
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_4" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_4" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_1" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_1" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_2" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_2" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/hip_3" />
+  <motor class="agent14" ctrllimited="true" ctrlrange="-1.0 1.0" gear="50" joint="agent14/ankle_3" />

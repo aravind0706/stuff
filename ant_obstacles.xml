@@ -1,0 +1,152 @@
+<mujoco model="ant">
+	<compiler inertiafromgeom="true" angle="degree" coordinate="local" />
+	<custom>
+    		<numeric name="init_qpos" data="0.0 0.0 0.55 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 -1.0 0.0 1.0" />
+	</custom>
+	<option integrator="RK4" timestep="0.0025"/>
+  	<!--option timestep="0.001" density="4000" viscosity="0.1" collision="predefined" integrator="Euler" iterations="1000">
+    		<flag warmstart="disable" />
+  	</option-->
+	<default>
+		<joint armature="1" damping="1" limited="true"/>
+		<!--geom conaffinity="0" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01"/-->
+		<geom conaffinity="0" contype="1" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01"  rgba="0.8 0.6 .4 1" />
+ 	</default>
+
+	<asset>
+		<texture name="texgeom" type="cube" builtin="flat" mark="cross" width="127" height="1278" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" markrgb="1 1 1" random="0.01" />
+		<material name='geom' texture="texgeom" texuniform="true" />
+	</asset>
+
+	<worldbody>
+		<light diffuse=".2 .2 .2" dir="0 0 -1" pos="0 0 2.5" />
+		<!--light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1"/-->
+		<geom conaffinity="1" condim="3" pos="0 0 0" size="2.5 2.5 2.5" rgba="0.9 0.9 0.9 1" type="plane" />
+
+		<body name="torso" pos="1. -1. .75">
+			<camera name="track" mode="trackcom" pos="0 -3 0.3" xyaxes="1 0 0 0 0 1"/>
+      			<geom name="torso_geom" pos="0 0 0" size="0.25 0.25 0.25" type="ellipsoid"/>
+			<!--geom name="head" density="0.01" rgba="1.0 0.5 0.3 1" pos="0.4 0 0.25" size="0.25" type="sphere"/-->
+      			<joint armature="0" damping="0" limited="false" margin="0.01" name="root" pos="0 0 0" type="free"/>
+      			<body name="front_left_leg" pos="0 0 0">
+        			<geom fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="aux_1_geom" size="0.08" type="capsule"/>
+        			<body name="aux_1" pos="0.2 0.2 0">
+          				<joint axis="0 0 1" name="hip_1" pos="0.0 0.0 0.0" range="-30 30" type="hinge"/>
+          				<geom fromto="0.0 0.0 0.0 0.2 0.2 0.0" name="left_leg_geom" size="0.08" type="capsule"/>
+          				<body pos="0.2 0.2 0">
+            					<joint axis="-1 1 0" name="ankle_1" pos="0.0 0.0 0.0" range="30 70" type="hinge"/>
+            					<geom fromto="0.0 0.0 0.0 0.4 0.4 0.0" name="left_ankle_geom" size="0.08" type="capsule"/>
+          				</body>
+        			</body>
+      			</body>
+      			<body name="front_right_leg" pos="0 0 0">
+        			<geom fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="aux_2_geom" size="0.08" type="capsule"/>
+        			<body name="aux_2" pos="-0.2 0.2 0">
+          				<joint axis="0 0 1" name="hip_2" pos="0.0 0.0 0.0" range="-30 30" type="hinge"/>
+          				<geom fromto="0.0 0.0 0.0 -0.2 0.2 0.0" name="right_leg_geom" size="0.08" type="capsule"/>
+          				<body pos="-0.2 0.2 0">
+            					<joint axis="1 1 0" name="ankle_2" pos="0.0 0.0 0.0" range="-70 -30" type="hinge"/>
+            					<geom fromto="0.0 0.0 0.0 -0.4 0.4 0.0" name="right_ankle_geom" size="0.08" type="capsule"/>
+          				</body>
+        			</body>
+      			</body>
+      			<body name="back_leg" pos="0 0 0">
+        			<geom fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="aux_3_geom" size="0.08" type="capsule"/>
+        			<body name="aux_3" pos="-0.2 -0.2 0">
+          				<joint axis="0 0 1" name="hip_3" pos="0.0 0.0 0.0" range="-30 30" type="hinge"/>
+          				<geom fromto="0.0 0.0 0.0 -0.2 -0.2 0.0" name="back_leg_geom" size="0.08" type="capsule"/>
+          				<body pos="-0.2 -0.2 0">
+            					<joint axis="-1 1 0" name="ankle_3" pos="0.0 0.0 0.0" range="-70 -30" type="hinge"/>
+            					<geom fromto="0.0 0.0 0.0 -0.4 -0.4 0.0" name="third_ankle_geom" size="0.08" type="capsule"/>
+          				</body>
+        			</body>
+      			</body>
+      			<body name="right_back_leg" pos="0 0 0">
+        			<geom fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="aux_4_geom" size="0.08" type="capsule"/>
+        			<body name="aux_4" pos="0.2 -0.2 0">
+          				<joint axis="0 0 1" name="hip_4" pos="0.0 0.0 0.0" range="-30 30" type="hinge"/>
+          				<geom fromto="0.0 0.0 0.0 0.2 -0.2 0.0" name="rightback_leg_geom" size="0.08" type="capsule"/>
+          				<body pos="0.2 -0.2 0">
+            					<joint axis="1 1 0" name="ankle_4" pos="0.0 0.0 0.0" range="30 70" type="hinge"/>
+            					<geom fromto="0.0 0.0 0.0 0.4 -0.4 0.0" name="fourth_ankle_geom" size="0.08" type="capsule"/>
+          				</body>
+        			</body>
+      			</body>
+    		</body>
+
+
+		<geom pos="0 2.5 .5" conaffinity="1" rgba="0. .1 .9 .3" size="2.5 0.1 .5" type="box"/>
+    		<geom pos="0 -2.5 .5" conaffinity="1" rgba="0. .1 .9 .3" size="2.5 0.1 .5" type="box"/>
+    		<geom pos="2.5 0 .5" conaffinity="1" rgba="0 .1 .9 .3" size="0.1 2.5 .5" type="box"/>
+		<geom pos="-2.5 0 .5" conaffinity="1" rgba="0 .1 .9 .3" size="0.1 2.5 .5" type="box"/>
+
+		<body name="goal" pos = "-2 2 0">
+			<geom conaffinity="0" contype="0" density="0.00001" rgba="0 1 0 1" size="0.45 0.005 0.2" type="cylinder"/>
+			<joint axis="1 0 0" damping="0.5" name="goal_slidex" pos="0 0 0" range="-10.3213 10.3" type="slide" />
+            		<joint axis="0 1 0" damping="0.5" name="goal_slidey" pos="0 0 0" range="-10.3213 10.3" type="slide" />
+		</body>
+
+		<body name="obstacle_1" pos="-0.9 0 .75">
+			<geom conaffinity="1" contype="1" name="distractor_1" pos="0 0 0" rgba="0.61 0.32 0.16 1" size="1.4 .25 .75" type="box"/>
+        	</body>
+
+		<!--body name="obstacle_2" pos="1.9 0 .75">
+			<geom conaffinity="1" contype="1" name="distractor_2" pos="0 0 0" rgba="0.61 0.32 0.16 1" size=".4 .25 .75" type="box"/>
+        	</body-->
+		<!--body name="obstacle_1" pos="0 1 0 ">
+			<geom conaffinity="1" contype="1" name="obstacle_1" pos="0 0 0" rgba="0.81 0.02 0.06 1" size=".4 .4 .5" type="box"/>
+		</body>
+
+				 
+		<body name="obstacle_2" pos="-1 1 0 ">
+			<geom conaffinity="1" contype="1" name="obstacle_2" pos="0 0 0" rgba="0.81 0.02 0.06 1" size=".4 .4 .5" type="box"/>
+		</body>
+
+
+		<body name="obstacle_3" pos="0 -2 0 ">
+			<geom conaffinity="1" contype="1" name="obstacle_3" pos="0 0 0" rgba="0.81 0.02 0.06 1" size=".4 .4 .5" type="box"/>
+		</body>
+
+
+		<body name="obstacle_4" pos="1 2 0 ">
+			<geom conaffinity="1" contype="1" name="obstacle_4" pos="0 0 0" rgba="0.81 0.02 0.06 1" size=".4 .4 .5" type="box"/>
+		</body-->
+
+		
+	</worldbody>
+
+  	<actuator>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="hip_4" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_4" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="hip_1" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_1" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="hip_2" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_2" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="hip_3" gear="150"/>
+    		<motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_3" gear="150"/>
+  	</actuator>
+  	<sensor>
+    		<jointpos name='pos_hip_1' joint='hip_1' />
+    		<jointpos name='pos_hip_2' joint='hip_2' />
+    		<jointpos name='pos_hip_3' joint='hip_3' />
+    		<jointpos name='pos_hip_4' joint='hip_4' />
+    		<jointpos name='pos_ankle_1' joint='ankle_1' />
+    		<jointpos name='pos_ankle_2' joint='ankle_2' />
+    		<jointpos name='pos_ankle_3' joint='ankle_3' />
+		<jointpos name='pos_ankle_4' joint='ankle_4' />
+		<jointpos name='goalpos_slidex' joint='goal_slidex' />
+		<jointpos name='goalpos_slidey' joint='goal_slidey' />
+
+    		<jointvel name='vel_hip_1'   joint='hip_1' />
+    		<jointvel name='vel_hip_2'   joint='hip_2' />
+    		<jointvel name='vel_hip_3'   joint='hip_3' />
+    		<jointvel name='vel_hip_4'   joint='hip_4' />
+    		<jointvel name='vel_ankle_1' joint='ankle_1' />
+   		<jointvel name='vel_ankle_2' joint='ankle_2' />
+    		<jointvel name='vel_ankle_3' joint='ankle_3' />
+    		<jointvel name='vel_ankle_4' joint='ankle_4' />
+		<jointvel name='goalvel_slidex' joint='goal_slidex' />
+		<jointvel name='goalvel_slidey' joint='goal_slidey' />
+  	</sensor>
+
+</mujoco>
